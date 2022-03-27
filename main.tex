@@ -1,0 +1,186 @@
+%%%author wuyou
+\documentclass[compress,mathserif,serif]{ctexbeamer}
+%%一个适合博士/硕士开题或者答辩使用的beamer模板
+
+\definecolor{nudtgreen1}{RGB}{25,83,51}
+\definecolor{nudtgreen2}{RGB}{33,77,72}
+\definecolor{nudtgreen3}{RGB}{31,52,31}
+\mode<presentation>
+{
+  \useoutertheme[footline=authorinstitute]{wuyoutree}
+  \setbeamercolor*{palette primary}{use=structure,fg=white,bg=nudtgreen1}
+  \setbeamercolor*{palette secondary}{use=structure,fg=white,bg=nudtgreen1}
+  \setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=nudtgreen3}
+  \setbeamercolor*{palette quaternary}{fg=white,bg=nudtgreen3}
+
+  \setbeamercolor*{sidebar}{use=structure,bg=structure.fg}
+  \setbeamercolor*{palette sidebar primary}{use=structure,fg=structure.fg!10}
+  \setbeamercolor*{palette sidebar secondary}{fg=white}
+  \setbeamercolor*{palette sidebar tertiary}{use=structure,fg=structure.fg!50}
+  \setbeamercolor*{palette sidebar quaternary}{fg=white}
+
+  \setbeamercolor*{titlelike}{parent=palette primary}
+
+  \setbeamercolor*{separation line}{}
+  \setbeamercolor*{fine separation line}{}
+
+\setbeamercolor*{section in toc}{fg=black}
+\setbeamercolor*{section number projected}{bg=nudtgreen1, fg=white}
+\setbeamercolor*{subsection number projected}{bg=nudtgreen1, fg=white}
+
+\setbeamertemplate{items}[circle]
+\setbeamercolor*{enumerate subitem}{fg=nudtgreen1}
+\setbeamercolor*{itemize item}{bg=nudtgreen1, fg=white}
+\setbeamercolor*{itemize item}{fg=red} 
+
+  \useinnertheme{rounded}
+
+  \usefonttheme[onlylarge]{structuresmallcapsserif}
+  \usefonttheme[onlysmall]{structurebold}
+  %\usecolortheme{seagull}%白底，黑色，适合投影仪效果不好的时候
+  %\setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+}
+\setbeamercolor{background}{bg=yellow!20}
+\newcommand{\emptypar}{\par~\par} %一个空行
+\newcommand{\yihao}{\fontsize{26bp}{32.5bp}\selectfont}    % 一号, 1.25倍行距
+\newcommand{\xiaoyi}{\fontsize{24bp}{30bp}\selectfont}    % 小一, 1.25倍行距
+\newcommand{\erhao}{\fontsize{22bp}{27.5bp}\selectfont}    % 二号, 1.25倍行距
+\newcommand{\xiaoer}{\fontsize{18bp}{18bp}\selectfont}    % 小二, 单倍行距
+\newcommand{\sanhao}{\fontsize{16bp}{24bp}\selectfont}    % 三号, 1.5倍行距
+\newcommand{\xiaosan}{\fontsize{15bp}{22.5bp}\selectfont}    % 小三, 1.5倍行距
+\newcommand{\sihao}{\fontsize{14bp}{21bp}\selectfont}    % 四号, 1.5倍行距
+\newcommand{\banxiaosi}{\fontsize{13bp}{19.5bp}\selectfont}    % 半小四, 1.5倍行距
+\newcommand{\xiaosi}{\fontsize{12bp}{18bp}\selectfont}    % 小四, 1.5倍行距
+\newcommand{\dawu}{\fontsize{11bp}{11bp}\selectfont}    % 大五号, 单倍行距
+\newcommand{\wuhao}{\fontsize{10.5bp}{10.5bp}\selectfont}    % 五号, 单倍行距
+\newcommand{\xiaowu}{\fontsize{9bp}{9bp}\selectfont}      %小五，单倍行距
+\newcommand{\liuhao}{\fontsize{7.5bp}{7.5bp}\selectfont} %六号，单倍行距
+\newcommand{\xiaoliu}{\fontsize{6.5bp}{6.5bp}\selectfont} %小六，单倍行距
+\newcommand{\qihao}{\fontsize{5.5bp}{5.5bp}\selectfont}  %七号，单倍行距
+
+\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\heiti}      % 黑体   (Windows自带simhei.ttf)
+\newcommand{\xihei}{\CJKfamily{xihei}}      % 黑体   (Windows自带)
+\newcommand{\li}{\CJKfamily{li}}        % 隶书   (Windows自带simli.ttf)
+\newcommand{\you}{\CJKfamily{you}}      % 幼圆   (Windows自带simyou.ttf)
+ 
+\setbeamertemplate{frametitle}
+{  \textbf{\color{black}\insertframetitle}\\[-5pt]
+  {\color{blue}\dotfill}
+}
+
+\usepackage[english]{babel}
+% or whatever 
+ 
+% or whatever
+\usepackage{alltt}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{newtxtext}
+\usepackage{multimedia}
+ 
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{xmpmulti}
+% \usepackage{chicago}
+\bibliographystyle{chinesebst}
+% \bibliographystyle{ieee}
+\usepackage{hyperref}
+
+\graphicspath{{figures/}}
+
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+
+\title[基于xxxxxxx研究] % (optional, use only with long paper titles)
+%\title{国防科技大学开题/答辩报告模版 }
+{\color{white}\heiti 基于xxxxxxx研究}
+\subtitle[硕士开题报告]
+{开题答辩报告}
+
+\author[x~x] % (optional, use only with lots of authors)
+{
+ 硕士生：x~x \\\\
+  \hspace{2em}导~~~~师：xx研究员\\ \hei
+  \quad \\
+ % \scriptsize{Email: yangjing2036@126.com}
+  }
+
+
+% - Use the \inst{?} command only if the authors have different
+% affiliation.
+\institute[国防科技大学] % (optional, but mostly needed)
+{
+  国防科技大学计算机学院
+ % \\国产基础软件工程中心
+}
+
+%可以自己定制日期
+%\date[2022年03月15日] % (optional)
+%{2022年03月15日}
+
+\date[] % (optional)
+{\today}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out.
+
+\pgfdeclareimage[height=1cm]{logo}{nudt_logo}
+\logo{\pgfuseimage{logo}}
+
+
+
+% \AtBeginSection[] {
+%   \begin{frame}<beamer>
+%     \kai
+%     \frametitle{提纲}
+%     \tableofcontents[currentsection,hideallsubsections]
+%     \hei
+%   \end{frame}
+% }
+\AtBeginSubsection[] {
+  \begin{frame}<beamer>
+    \frametitle{提纲}
+    {\xiaowu \tableofcontents[currentsection,currentsubsection]}
+    \hei
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+% \beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document} 
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+  % \begin{frame}
+  %   \frametitle{提纲}
+  %   \tableofcontents
+  %   %   You might wish to add the option [pausesections]
+  % \end{frame}
+  \begin{frame}
+    \frametitle{目录}
+    {  \xiaowu
+      \tableofcontents[hideallsubsections]
+      \heiti}
+  \end{frame}
+
+
+  \include{kaiti} 
+\end{document}

@@ -1,0 +1,13 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{课题背景及意义}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{课题背景}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{研究意义}{6}{0}{1}
+\beamer@sectionintoc {2}{国内外研究现状分析}{8}{0}{2}
+\beamer@sectionintoc {3}{主要研究内容和方案}{9}{0}{3}
+\beamer@subsectionintoc {3}{1}{太极剑}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{太极脚}{14}{0}{3}
+\beamer@sectionintoc {4}{前期研究与试验工作}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{太极起步阶段}{15}{0}{4}
+\beamer@sectionintoc {5}{论文进度安排和预期目标}{17}{0}{5}
+\beamer@sectionintoc {6}{完成课题已具备和所需条件及经费}{20}{0}{6}
+\beamer@sectionintoc {7}{研究中可能遇到的困难、问题，以及解决途径}{21}{0}{7}

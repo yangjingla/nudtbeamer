@@ -1,0 +1,74 @@
+\ProvidesPackageRCS $Header: /cvsroot/latex-beamer/latex-beamer/themes/outer/beamerouterthemetree.sty,v 1.4 2004/10/14 09:48:48 tantau Exp $
+
+% Copyright 2003 by Till Tantau <tantau@users.sourceforge.net>
+%
+% This program can be redistributed and/or modified under the terms
+% of the GNU Public License, version 2.
+
+\newif\ifbeamer@tree@showhooks
+\beamer@tree@showhookstrue
+
+\DeclareOptionBeamer{hooks}[true]{\csname beamer@tree@showhooks#1\endcsname}
+\DeclareOptionBeamer{footline}{\csname beamer@theme@footline@#1\endcsname}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\defbeamertemplate*{headline}{tree theme}
+{%
+    \begin{beamercolorbox}[wd=\paperwidth,colsep=1.5pt]{upper separation line head}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.8ex,dp=0.5ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}
+      \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.8ex,dp=0.5ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}
+      \usebeamerfont{section in head/foot}%
+      \ifbeamer@tree@showhooks
+        \setbox\beamer@tempbox=\hbox{\insertsectionhead}%
+        \ifdim\wd\beamer@tempbox>1pt%
+          \hskip2pt\raise1.9pt\hbox{\vrule width0.4pt height1.875ex\vrule width 5pt height0.4pt}%
+          \hskip1pt%
+        \fi%
+      \else%  
+        \hskip6pt%
+      \fi%
+      \insertsectionhead
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1.8ex,dp=0.5ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
+      \usebeamerfont{subsection in head/foot}%
+      \ifbeamer@tree@showhooks
+        \setbox\beamer@tempbox=\hbox{\insertsubsectionhead}%
+        \ifdim\wd\beamer@tempbox>1pt%
+          \hskip9.4pt\raise1.9pt\hbox{\vrule width0.4pt height1.875ex\vrule width 5pt height0.4pt}%
+          \hskip1pt%
+        \fi%
+      \else%  
+        \hskip12pt%
+      \fi%
+      \insertsubsectionhead
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=\paperwidth,colsep=1.5pt]{lower separation line head}
+    \end{beamercolorbox}
+
+
+
+}
+%%%%footline
+\defbeamertemplate*{footline}{wuyoutree theme}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=1.8ex,dp=0.7ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertdate \hspace{1.5em} \insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=1.8ex,dp=0.7ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{institute in head/foot}\insertinstitute
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+  
+\mode
+<all>
