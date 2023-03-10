@@ -7,7 +7,7 @@
 ## NUDT开题报告 [todo]
 - github: https://github.com/TomHeaven/nudt_thesis
 - gitee: https://gitee.com/tmg-nudt/nudt_thesis
-- 😄overleaf: [TODO]
+- 😄overleaf: https://www.overleaf.com/read/qhvcddrsbvbw
 
 ## NUDT毕业模版
 - github:https://github.com/TomHeaven/nudtproposal
@@ -16,9 +16,8 @@
 
 ## NUDT beamer:
 - github: https://github.com/yangjingla/nudtbeamer
-- gitee:
+- gitee: https://gitee.com/tmg-nudt/nudtbeamer
 - 😄overleaf: https://www.overleaf.com/read/xmyfffbncddj
-
 
 
 ---
